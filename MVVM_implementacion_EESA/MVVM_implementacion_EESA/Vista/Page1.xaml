@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVM_implementacion_EESA.Vista.Page1">
+    <ContentPage.Content>
+        <Grid BackgroundColor="Aqua">
+            <StackLayout VerticalOptions="Center">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label Text="#1:" TextColor="White" FontAttributes="Bold" VerticalOptions="Center" />
+                    <Entry PlaceholderColor="white" Placeholder="Escribe un Numero" HorizontalOptions="StartAndExpand" Text="{Binding N1}"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label Text="#2:" TextColor="White" FontAttributes="Bold" VerticalOptions="Center" />
+                    <Entry PlaceholderColor="white" Placeholder="Escribe un Numero" HorizontalOptions="StartAndExpand" Text="{Binding N2}"/>
+                </StackLayout>
+                <Button Text="Sumar" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding Suymarcommand}" TextTransform="None" Background="white" FontAttributes="Bold" CornerRadius="5" TextColor="Black"/>
+                <Label Text="{Binding R}" TextColor="White" HorizontalOptions="Center" FontAttributes="Bold" FontSize="35" />
+                <Button Text="Ir a página 2" HorizontalOptions="Center" VerticalOptions="Center" CornerRadius="5" BackgroundColor="white" FontAttributes="Bold" Command="{Binding Navegarpagina2command}"/>
+                <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                    <Label TextColor="White" FontAttributes="Bold" Text="Picker: " VerticalOptions="Center"/>
+                    <Picker HorizontalOptions="FillAndExpand" Title="Selecciona una opción" SelectedItem="{Binding SeleccionTipoUsuario}">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Administrador</x:String>
+                                <x:String>Empleado</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </StackLayout>
+                <StackLayout>
+                    <DatePicker HorizontalOptions="Center" Date="{Binding Fecha,Mode=TwoWay}">
+                        <DatePicker.Format>dd/MM/yyyy</DatePicker.Format>
+                    </DatePicker>
+                    <Label Text="{Binding Resultadofecha}" HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                </StackLayout>
+                
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
