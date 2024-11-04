@@ -7,14 +7,14 @@ using Xamarin.Forms;
 
 namespace MVVM_implementacion_EESA.VistaModelo
 {
-    class VMpatron : BaseViewModel
+    class VMpage1 : BaseViewModel
     {
         #region VARIABLES
         string _Texto;
         #endregion
 
         #region CONTRUCTOR
-        public VMpatron(INavigation navigation)
+        public VMpage1(INavigation navigation)
         {
             Navigation = navigation;
         }

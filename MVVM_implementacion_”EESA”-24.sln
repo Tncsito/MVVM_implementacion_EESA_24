@@ -7,17 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM_implementacion_”EESA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM_implementacion_”EESA”-24.iOS", "MVVM_implementacion_”EESA”-24\MVVM_implementacion_”EESA”-24.iOS\MVVM_implementacion_”EESA”-24.iOS.csproj", "{1E3ABBF3-DEDC-49C6-BEAD-E9F402E3FCCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM_implementacion_”EESA”-24", "MVVM_implementacion_”EESA”-24\MVVM_implementacion_”EESA”-24\MVVM_implementacion_”EESA”-24.csproj", "{680FD0E0-0372-4B16-8966-EACB028C4F7C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vista", "Vista", "{C40E0A0D-42CB-45B2-B4EB-FE3DBBEB28F7}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VistaModelo", "VistaModelo", "{C7F60C49-F8D8-4432-A515-67A8E220E4DF}"
-	ProjectSection(SolutionItems) = preProject
-		BaseViewModel.cs = BaseViewModel.cs
-		VMpatron.cs = VMpatron.cs
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modelo", "Modelo", "{EBC49A8E-ED05-40DC-AD22-EB2B268D90F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVM_implementacion_”EESA”-24", "MVVM_implementacion_”EESA”-24\MVVM_implementacion_”EESA”-24\MVVM_implementacion_”EESA”-24.csproj", "{680FD0E0-0372-4B16-8966-EACB028C4F7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -14,5 +14,14 @@ namespace MVVM_implementacion__EESA__24
         {
             InitializeComponent();
         }
+
+        private void btnGuardar_Clicked(object sender, EventArgs e)
+        {
+            Alerta();
+        }
+        private void Alerta()
+        {
+            DisplayAlert("Alerta", "Esta es una Alerta", "Ta bien");
+        }
     }
 }
